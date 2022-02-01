@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import About from "./partials/About";
-import Card from "./partials/Card";
-import Footer from "./partials/Footer";
-import Projects from "./partials/Projects";
-import Skills from "./partials/Skills";
+import About from "./partials/About.jsx";
+import Card from "./partials/Card.jsx";
+import Footer from "./partials/Footer.jsx";
+import Projects from "./partials/Projects.jsx";
+import Skills from "./partials/Skills.jsx";
 import data from "./assets/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +16,7 @@ function App() {
     });
   });
   return (
-    <div className="min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+    <div className="min-h-screen py-10 px-3 sm:px-5 bg-black text-white">
       <div data-aos="fade-down" data-aos-duration="800">
         <Card name={data.name} title={data.title} social={data.social} />
       </div>
