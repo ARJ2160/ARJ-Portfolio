@@ -7,7 +7,7 @@ const Footer = () => {
                 Made with <span role="img" aria-label="heart">💙</span> by <a className="text-blue-500 hover:underline" href="https://github.com/ARJ2160">Atharva J</a>
             </p>
         </div>
-  )
+    )
 }
 
 export default Footer
