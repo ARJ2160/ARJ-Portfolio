@@ -71,9 +71,23 @@ const data = {
     ],
     projects: [
         {
+            id: 6,
+            title: "IMDb Clone",
+            description: "Built an IMDb website clone using the IMDb API with React JS for the front-end and Redux Toolkit for managing state. The website allows the user to search for movies and view the details of the movie which is handled using Redux Thunk.",
+            tags: [
+                "React JS",
+                "Redux Toolkit",
+                "Redux Thunk",
+                "Sass"
+            ],
+            projectlink: "https://redux-movies-lemon.vercel.app/",
+            link: "https://github.com/ARJ2160/Redux-Movies"
+        },
+        
+        {
             id: 1, 
             title: "Lusion React + Tailwind Clone",
-            description: `An emulation of the "Lusion" website using React and Tailwind CSS`,
+            description: `An emulation of the "Lusion" website using React and Tailwind`,
             tags: [
                 "React JS",
                 "Tailwind CSS",
@@ -85,11 +99,12 @@ const data = {
         {
             id: 2,
             title: "Redux Authentication System",
-            description: "A System that authenticates the user's details and stores the sign-up information in a local redux store. When the user is signing-in, the app cross-checks the details with the sign-up data and logins in the user if it exists. The passwords are hashed using a library called MD5.",
+            description: "A system that authenticates the user's details and stores the sign-up information in a local redux store. When the user is signing-in, the app cross-checks the details with the sign-up data and logins in the user if it exists. The passwords are hashed using a library called MD5.",
             tags: [
                 "React JS",
                 "Redux",
                 "Redux Toolkit",
+                "Redux Persist",
                 "MD5 Hashing"
             ],
             projectlink: "https://redux-form-one.vercel.app/",
@@ -108,13 +123,13 @@ const data = {
                 "MongoDB",
                 "Mongoose"
             ],
-            projectlink: "",
+            projectlink: "https://github.com/ARJ2160/React-Blog",
             link: "https://github.com/ARJ2160/React-Blog"
         },
         {
-            id: 3,
+            id: 4,
             title: "Tailwind Spotify Clone",
-            description: "Clone the Spotify website with Tailwind.",
+            description: "Created a clone of the Spotify website with Tailwind.",
             tags: [
                 "React JS",
                 "Tailwind CSS",
@@ -123,16 +138,17 @@ const data = {
             link: "https://github.com/ARJ2160/Tailwind-Spotify-Clone"
         },
         {
-            id: 4,
+            id: 5,
             title: "Samtej Industries LLP",
             description: "Converted low fidelity designs to front-ends. Developed a static React JS website that helped bring the business online so users could browse through the various products the company offers.",
             tags: [
                 "React JS",
-                "Bootsrtap 5",
+                "Bootstrap 5",
             ],
             projectlink: "https://samtejllp.com/",
             link: "https://github.com/ARJ2160/Samtej-React"
-        }
+        },
+        
     ]
 };
 export default data;

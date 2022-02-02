@@ -8,7 +8,7 @@ const Card = ({ name, title, social: { GitHub, LinkedIn, Twitter, Email, Spotify
     return (
         <div className="w-full">
             <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5">
-                <div className="">
+                <div className="profile-pic">
                     <img
                         className="w-32 mx-auto shadow-xl rounded-full"
                         src={pic}
@@ -16,7 +16,7 @@ const Card = ({ name, title, social: { GitHub, LinkedIn, Twitter, Email, Spotify
                     />
                 </div>
                 <div className="text-center mt-5">
-                    <p className="text-xl sm:text-2xl font-semibold text-gray-900">
+                    <p className="name text-xl sm:text-2xl font-semibold text-gray-900">
                         {name}
                     </p>
                     <p className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2">
