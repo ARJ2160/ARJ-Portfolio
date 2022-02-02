@@ -8,7 +8,7 @@ const ProjectCard = ({ project: { title, description, tags, projectlink, link } 
             <a href={link} target="_blank" rel="noopener noreferrer">
                 <h1 className="text-xl text-center font-bold">
                     {title}{" "}
-                    <FaExternalLinkAlt className="text-white ml-2 inline align-baseline" />
+                    <FaExternalLinkAlt className="ml-2 inline align-baseline" />
                 </h1>
             </a>
             <hr className="my-4" />
