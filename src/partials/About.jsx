@@ -3,7 +3,9 @@ import React from 'react';
 const About = ({ title }) => {
   return (
     <div className='background max-w-4xl mx-auto mt-16 sm:p-10 p-5'>
-      <h1 className='text-2xl md:text-5xl font-bold text-center'>{title}</h1>
+      <h1 className='text-2xl pb-5 md:text-5xl font-bold text-center'>
+        {title}
+      </h1>
       <p className='text-base text-left md:text-center text-gray-600 dark:text-white leading-relaxed mt-4'>
         I am a <strong>React JS Developer</strong>, excited to learn more about
         how Technology and Business work in the corporate world. I have a

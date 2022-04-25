@@ -4,7 +4,7 @@ import SkillCard from './SkillCard.jsx';
 const Skills = ({ skills }) => {
   return (
     <div className='tech-stack'>
-      <h1 className='text-2xl md:text-5xl text-center font-extrabold'>
+      <h1 className='text-2xl pb-5 md:text-5xl text-center font-extrabold'>
         Here's my Tech Stack
       </h1>
       <div className='grid md:grid-cols-4 sm:grid-cols-2 max-w-2xl mx-auto mt-8'>

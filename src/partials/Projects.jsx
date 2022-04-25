@@ -4,7 +4,7 @@ import React from 'react';
 const Projects = ({ projects }) => {
   return (
     <div className='projects'>
-      <h1 className='mt-8 text-2xl md:text-5xl text-center font-extrabold'>
+      <h1 className='mt-8 pb-5 text-2xl md:text-5xl text-center font-extrabold'>
         My projects
       </h1>
       {projects.map((project) => (
