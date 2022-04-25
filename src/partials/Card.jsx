@@ -1,5 +1,12 @@
-import { FaGithub, FaRegEnvelope, FaSpotify, FaTwitter } from 'react-icons/fa';
+import {
+  FaFolder,
+  FaGithub,
+  FaRegEnvelope,
+  FaSpotify,
+  FaTwitter,
+} from 'react-icons/fa';
 
+import ARJResume from '../assets/ARJ-Resume.pdf';
 import React from 'react';
 import { SiLinkedin } from 'react-icons/si';
 import pic from '../images/Atharva_Joshi.jpg';
@@ -9,7 +16,7 @@ import pic from '../images/Atharva_Joshi.jpg';
 const Card = ({
   name,
   title,
-  social: { GitHub, LinkedIn, Twitter, Email, Spotify },
+  social: { GitHub, LinkedIn, Twitter, Email, Spotify, Resume },
 }) => {
   return (
     <div className='w-full'>
@@ -64,6 +71,16 @@ const Card = ({
               <SiLinkedin />
               <span className='tooltip group-hover:scale-100'>LinkedIn</span>
               <span className='sr-only'>LinkedIn</span>
+            </a>
+            <a
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full hover:text-white transition-colors duration-300 group'
+              href={ARJResume}
+              download='Professional Resume - Atharva Joshi.pdf'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <FaFolder />
+              <span className='tooltip group-hover:scale-100'>Resume</span>
+              <span className='sr-only'>Resume</span>
             </a>
             <a
               className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full hover:text-white transition-colors duration-300 group'
