@@ -6,7 +6,7 @@ const Footer = () => {
       <p className='text-black dark:text-white mb-4'>
         Made by{' '}
         <a
-          className='text-blue-500 hover:underline'
+          className='text-blue-400 hover:underline'
           href='https://github.com/ARJ2160'>
           Atharva J
         </a>

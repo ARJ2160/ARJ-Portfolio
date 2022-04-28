@@ -9,7 +9,7 @@ import {
 import ARJResume from '../assets/ARJ-Resume.pdf';
 import React from 'react';
 import { SiLinkedin } from 'react-icons/si';
-import pic from '../images/Atharva_Joshi.jpg';
+import pic from '../images/Atharva_Joshi.webp';
 
 // import profile from "../images/profile.png";
 
