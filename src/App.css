@@ -6,11 +6,10 @@
 
 * {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
+  @apply transition duration-300;
 }
-body {
-  background-color: #23263a;
-  color: #a7a9be;
-}
+
 .tech-stack > h1 {
   color: transparent;
   background-size: cover;

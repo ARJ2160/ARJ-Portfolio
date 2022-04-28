@@ -16,11 +16,11 @@ import pic from '../images/Atharva_Joshi.jpg';
 const Card = ({
   name,
   title,
-  social: { GitHub, LinkedIn, Twitter, Email, Spotify, Resume },
+  social: { GitHub, LinkedIn, Twitter, Email, Spotify },
 }) => {
   return (
-    <div className='w-full'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5'>
+    <div className='w-full dark:text-black'>
+      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-2xl rounded-xl p-5 mt-10'>
         <div className='profile-pic'>
           <img
             className='w-32 mx-auto shadow-xl rounded-full'
@@ -29,10 +29,8 @@ const Card = ({
           />
         </div>
         <div className='text-center mt-5'>
-          <p className='name text-xl sm:text-2xl font-semibold text-gray-900'>
-            {name}
-          </p>
-          <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
+          <p className='name text-xl sm:text-2xl font-semibold'>{name}</p>
+          <p className='text-xs sm:text-base pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
             {title}
           </p>
           <div className='flex align-center justify-center mt-4'>
