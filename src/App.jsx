@@ -9,7 +9,6 @@ import Card from './partials/Card.jsx';
 import Footer from './partials/Footer.jsx';
 import Projects from './partials/Projects.jsx';
 import Skills from './partials/Skills.jsx';
-import Test from './partials/Test';
 import data from './assets/data';
 import sunSvg from './images/sun.svg';
 import useDarkMode from './hooks/useDarkMode.js';
@@ -33,7 +32,6 @@ const App = () => {
         <Skills skills={data.skills} />
         <Projects projects={data.projects} />
         <Footer github={data.social.GitHub} />
-        {/* <Test /> */}
       </div>
       <div>
         <img
