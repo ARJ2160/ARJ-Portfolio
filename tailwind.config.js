@@ -10,7 +10,11 @@ module.exports = {
         dark: '#000',
         white: '#fff',
         lightText: '#76797d',
-        backgroundBlue: '#23263A',
+        backgroundBlue: '#001E3C',
+        skyBlue: '#3399FF',
+      },
+      screens: {
+        sm: '388px',
       },
     },
   },

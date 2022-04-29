@@ -10,7 +10,12 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
+import Form from '../images/Project Images/Redux_Form.webp';
+import Lusion from '../images/Project Images/Lusion_React.webp';
+import Movies from '../images/Project Images/Redux_Movies.webp';
 import React from 'react';
+import Samtej from '../images/Project Images/SamTej.webp';
+import Spotify from '../images/Project Images/Spotify_Clone.webp';
 
 const BOOTSTRAP_FOR_SKILL_ICON = 'text-4xl mx-auto inline-block';
 const data = {
@@ -23,10 +28,6 @@ const data = {
     Email: 'atharvaj2160@gmail.com',
     Spotify:
       'https://open.spotify.com/playlist/52gtDapY50kKkLEnnnvYgz?si=89f44d4ce2944b91',
-  },
-  about: {
-    title: 'My Background',
-    description: ``,
   },
   skills: [
     {
@@ -82,18 +83,9 @@ const data = {
   ],
   projects: [
     {
-      id: 6,
-      title: 'IMDb Clone',
-      description:
-        'Built an IMDb website clone using the IMDb API with React JS for the front-end and Redux Toolkit for managing state. The website allows the user to search for movies and view the details of the movie which is handled using Redux Thunk.',
-      tags: ['React JS', 'Redux Toolkit', 'Redux Thunk', 'Sass'],
-      projectlink: 'https://redux-movies-lemon.vercel.app/',
-      link: 'https://github.com/ARJ2160/Redux-Movies',
-    },
-
-    {
       id: 1,
       title: 'Lusion React + Tailwind Clone',
+      image: Lusion,
       description: `An emulation of the "Lusion" website using React and Tailwind`,
       tags: ['React JS', 'Tailwind CSS', 'Stripe API'],
       projectlink: 'https://tailwind-lusion.vercel.app/',
@@ -101,9 +93,29 @@ const data = {
     },
     {
       id: 2,
-      title: 'Redux Authentication System',
+      title: 'Tailwind Spotify Clone',
+      image: Spotify,
+      description: 'Created a clone of the Spotify website with Tailwind.',
+      tags: ['React JS', 'Tailwind CSS'],
+      projectlink: 'https://tailwind-spotify-clone.vercel.app/',
+      link: 'https://github.com/ARJ2160/Tailwind-Spotify-Clone',
+    },
+    {
+      id: 3,
+      title: 'IMDb Clone',
+      image: Movies,
       description:
-        "A system that authenticates the user's details and stores the sign-up information in a local redux store. When the user is signing-in, the app cross-checks the details with the sign-up data and logins in the user if it exists. The passwords are hashed using a library called MD5.",
+        'Built an IMDb website clone using the IMDb API with React JS for the front-end and Redux Toolkit for managing state.',
+      tags: ['React JS', 'Redux Toolkit', 'Redux Thunk', 'Sass'],
+      projectlink: 'https://redux-movies-lemon.vercel.app/',
+      link: 'https://github.com/ARJ2160/Redux-Movies',
+    },
+    {
+      id: 4,
+      title: 'Redux Authentication System',
+      image: Form,
+      description:
+        'Created an Authentication Flow System using React JS and used Redux Toolkit for managing state.',
       tags: [
         'React JS',
         'Redux',
@@ -115,10 +127,21 @@ const data = {
       link: 'https://github.com/ARJ2160/Redux-Authentication',
     },
     {
-      id: 3,
-      title: 'React Blog',
+      id: 5,
+      title: 'Samtej Industries LLP',
+      image: Samtej,
       description:
-        'A blog website built using React and Tailwind CSS which allows the user to view blogs written by the users with admin access. Admin access is given to the developers only to limit the number of posts being uploaded on the MongoDB server. MD5 hashes the passwords.',
+        'Converted low fidelity designs to front-ends. Developed a static React JS website that helped bring the business online so users could browse through the various products the company offers.',
+      tags: ['React JS', 'Bootstrap 5'],
+      projectlink: 'https://samtejllp.com/',
+      link: 'https://github.com/ARJ2160/Samtej-React',
+    },
+    {
+      id: 6,
+      title: 'React Blog',
+      image: null,
+      description:
+        'A blog website built using React and Tailwind CSS which allows the user to view blogs written by the users with admin access.',
       tags: [
         'React JS',
         'Redux',
@@ -130,23 +153,6 @@ const data = {
       ],
       projectlink: 'https://github.com/ARJ2160/React-Blog',
       link: 'https://github.com/ARJ2160/React-Blog',
-    },
-    {
-      id: 4,
-      title: 'Tailwind Spotify Clone',
-      description: 'Created a clone of the Spotify website with Tailwind.',
-      tags: ['React JS', 'Tailwind CSS'],
-      projectlink: 'https://tailwind-spotify-clone.vercel.app/',
-      link: 'https://github.com/ARJ2160/Tailwind-Spotify-Clone',
-    },
-    {
-      id: 5,
-      title: 'Samtej Industries LLP',
-      description:
-        'Converted low fidelity designs to front-ends. Developed a static React JS website that helped bring the business online so users could browse through the various products the company offers.',
-      tags: ['React JS', 'Bootstrap 5'],
-      projectlink: 'https://samtejllp.com/',
-      link: 'https://github.com/ARJ2160/Samtej-React',
     },
   ],
 };
