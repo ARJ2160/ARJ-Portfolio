@@ -1,24 +1,24 @@
-import { FaHtml5, FaReact } from 'react-icons/fa';
-import {
-  SiApollographql,
-  SiCss3,
-  SiGithub,
-  SiGraphql,
-  SiJavascript,
-  SiMongodb,
-  SiRedux,
-  SiTailwindcss,
-} from 'react-icons/si';
-
+import Apollo from '../images/Skill SVGs/apollo-graphql.svg';
+import BlogWebsite from '../images/Project Images/Blog_Website.webp';
+import Bootstrap from '../images/Skill SVGs/bootstrap.svg';
+import CSS3 from '../images/Skill SVGs/css.svg';
+import Express from '../images/Skill SVGs/express.svg';
 import Form from '../images/Project Images/Redux_Form.webp';
+import GitHub from '../images/Skill SVGs/github.svg';
+import GraphQL from '../images/Skill SVGs/graphql.svg';
+import HTML5 from '../images/Skill SVGs/html.svg';
+import Javascript from '../images/Skill SVGs/javascript.svg';
 import Lusion from '../images/Project Images/Lusion_React.webp';
+import MongoDB from '../images/Skill SVGs/mongodb.svg';
 import Movies from '../images/Project Images/Redux_Movies.webp';
-import React from 'react';
+import ReactIcon from '../images/Skill SVGs/react.svg';
+import Redux from '../images/Skill SVGs/redux.svg';
 import Samtej from '../images/Project Images/SamTej.webp';
 import Spotify from '../images/Project Images/Spotify_Clone.webp';
+import Tailwind from '../images/Skill SVGs/tailwind-css.svg';
+import Typescript from '../images/Skill SVGs/typescript.svg';
 
-const BOOTSTRAP_FOR_SKILL_ICON = 'text-4xl mx-auto inline-block';
-const data = {
+export const data = {
   name: 'Atharva Joshi',
   title: 'React JS | Full-Stack Developer',
   social: {
@@ -33,52 +33,67 @@ const data = {
     {
       id: 1,
       skillName: 'React JS',
-      skillIcon: <FaReact className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillIcon: ReactIcon,
     },
     {
       id: 2,
-      skillName: 'Tailwind CSS',
-      skillIcon: <SiTailwindcss className={BOOTSTRAP_FOR_SKILL_ICON} />,
-    },
-    {
-      id: 3,
-      skillName: 'Redux',
-      skillIcon: <SiRedux className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'Typescript',
+      skillIcon: Typescript,
     },
     {
       id: 4,
-      skillName: 'JavaScript',
-      skillIcon: <SiJavascript className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'Redux',
+      skillIcon: Redux,
     },
     {
       id: 5,
-      skillName: 'GraphQL',
-      skillIcon: <SiGraphql className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'JavaScript',
+      skillIcon: Javascript,
+    },
+    {
+      id: 3,
+      skillName: 'Tailwind CSS',
+      skillIcon: Tailwind,
     },
     {
       id: 6,
-      skillName: 'Apollo GraphQL',
-      skillIcon: <SiApollographql className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'GraphQL',
+      skillIcon: GraphQL,
     },
     {
       id: 7,
-      skillName: 'MongoDB',
-      skillIcon: <SiMongodb className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'Apollo GraphQL',
+      skillIcon: Apollo,
     },
     {
       id: 8,
-      skillName: 'HTML 5',
-      skillIcon: <FaHtml5 className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'MongoDB',
+      skillIcon: MongoDB,
     },
     {
       id: 9,
-      skillName: 'CSS 3',
-      skillIcon: <SiCss3 className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillName: 'Express',
+      skillIcon: Express,
     },
     {
       id: 10,
+      skillName: 'HTML 5',
+      skillIcon: HTML5,
+    },
+    {
+      id: 11,
+      skillName: 'Bootstrap',
+      skillIcon: Bootstrap,
+    },
+    {
+      id: 12,
+      skillName: 'CSS 3',
+      skillIcon: CSS3,
+    },
+    {
+      id: 13,
       skillName: 'GitHub',
-      skillIcon: <SiGithub className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillIcon: GitHub,
     },
   ],
   projects: [
@@ -88,7 +103,7 @@ const data = {
       image: Lusion,
       description: `An emulation of the "Lusion" website using React and Tailwind`,
       tags: ['React JS', 'Tailwind CSS', 'Stripe API'],
-      projectlink: 'https://tailwind-lusion.vercel.app/',
+      projectLink: 'https://tailwind-lusion.vercel.app/',
       link: 'https://github.com/ARJ2160/Tailwind-Lusion',
     },
     {
@@ -97,7 +112,7 @@ const data = {
       image: Spotify,
       description: 'Created a clone of the Spotify website with Tailwind.',
       tags: ['React JS', 'Tailwind CSS'],
-      projectlink: 'https://tailwind-spotify-clone.vercel.app/',
+      projectLink: 'https://tailwind-spotify-clone.vercel.app/',
       link: 'https://github.com/ARJ2160/Tailwind-Spotify-Clone',
     },
     {
@@ -107,7 +122,7 @@ const data = {
       description:
         'Built an IMDb website clone using the IMDb API with React JS for the front-end and Redux Toolkit for managing state.',
       tags: ['React JS', 'Redux Toolkit', 'Redux Thunk', 'Sass'],
-      projectlink: 'https://redux-movies-lemon.vercel.app/',
+      projectLink: 'https://redux-movies-lemon.vercel.app/',
       link: 'https://github.com/ARJ2160/Redux-Movies',
     },
     {
@@ -123,7 +138,7 @@ const data = {
         'Redux Persist',
         'MD5 Hashing',
       ],
-      projectlink: 'https://redux-form-one.vercel.app/',
+      projectLink: 'https://redux-form-one.vercel.app/',
       link: 'https://github.com/ARJ2160/Redux-Authentication',
     },
     {
@@ -133,13 +148,13 @@ const data = {
       description:
         'Converted low fidelity designs to front-ends. Developed a static React JS website that helped bring the business online so users could browse through the various products the company offers.',
       tags: ['React JS', 'Bootstrap 5'],
-      projectlink: 'https://samtejllp.com/',
+      projectLink: 'https://samtejllp.com/',
       link: 'https://github.com/ARJ2160/Samtej-React',
     },
     {
       id: 6,
       title: 'React Blog',
-      image: null,
+      image: BlogWebsite,
       description:
         'A blog website built using React and Tailwind CSS which allows the user to view blogs written by the users with admin access.',
       tags: [
@@ -151,9 +166,8 @@ const data = {
         'MongoDB',
         'Mongoose',
       ],
-      projectlink: 'https://github.com/ARJ2160/React-Blog',
+      projectLink: 'https://github.com/ARJ2160/React-Blog',
       link: 'https://github.com/ARJ2160/React-Blog',
     },
   ],
 };
-export default data;

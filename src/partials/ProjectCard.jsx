@@ -1,18 +1,17 @@
 import React from 'react';
-import data from '../assets/data';
-
-let i = 0;
 
 const ProjectCard = ({ keys, project }) => {
-  const { title, description, tags, projectlink, link, image } = project;
+  let i = 0;
+  const { title, description, tags, projectLink, link, image } = project;
   return (
     <div
       key={keys}
       className='max-w-sm dark:bg-white dark:text-black bg-backgroundBlue text-white shadow-lg rounded-lg overflow-hidden my-4'>
-      <a href={projectlink} target='_blank' rel='noopener noreferrer'>
+      <a href={projectLink} target='_blank' rel='noopener noreferrer'>
         <img
           className='w-full aspect-auto object-cover object-center'
           src={image}
+          loading='lazy'
           alt=' No image available'
         />
       </a>

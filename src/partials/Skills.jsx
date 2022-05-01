@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
         <span className='font-bold'>Here's my</span>{' '}
         <span className='text-skyBlue font-bold'>Tech Stack</span>
       </div>
-      <div className='grid md:grid-cols-4 sm:grid-cols-2 w-fit sm:gap-10 mx-auto mt-8'>
+      <div className='grid md:grid-cols-4 sm:grid-cols-2 w-fit sm:gap-7 mx-auto mt-8'>
         {skills.map((skill) => {
           return (
             <SkillCard
