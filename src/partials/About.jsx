@@ -8,7 +8,7 @@ const About = ({ about }) => {
         <span className='text-skyBlue font-bold'>Background</span>
       </div>
       <p className='text-lg text-left md:text-center leading-relaxed mt-4'>
-        "I am a React JS developer, excited to learn more about how technology
+        I am a React JS developer, excited to learn more about how technology
         and business work in the corporate world. I have a tendency to always
         ask questions about how certain things work, no matter what the topic
         is. What piques my interest in understanding business strategies,
@@ -18,7 +18,7 @@ const About = ({ about }) => {
         responsive websites with libraries like React JS, Redux, Typescript,
         Mongo DB, Mongoose, Tailwind CSS/Bootstrap 5, Express JS. I am
         currently aiming towards increasing my tech stack towards technologies
-        like Solidity, GraphQL, and NEXT JS."
+        like Solidity, GraphQL, and NEXT JS.
       </p>
     </div>
   );
