@@ -37,7 +37,7 @@ const Card = ({
           </p>
           <div className='flex align-center justify-center mt-4'>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300 group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-0 group'
               href={Twitter}
               target='_blank'
               rel='noopener noreferrer'>

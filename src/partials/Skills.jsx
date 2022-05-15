@@ -4,7 +4,7 @@ import SkillCard from './SkillCard.jsx';
 const Skills = ({ skills }) => {
   return (
     <div className='tech-stack mt-5'>
-      <div className='text-4xl pb-5 md:text-5xl text-center'>
+      <div className='text-4xl pb-5 md:text-6xl leading-10 text-center my-10'>
         <span className='font-bold'>Here's my</span>{' '}
         <span className='text-skyBlue font-bold'>Tech Stack</span>
       </div>
@@ -24,3 +24,4 @@ const Skills = ({ skills }) => {
 };
 
 export default Skills;
+// text-4xl pb-5 md:text-5xl text-center

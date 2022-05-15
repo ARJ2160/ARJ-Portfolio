@@ -11,6 +11,7 @@ import Javascript from '../images/Skill SVGs/javascript.svg';
 import Lusion from '../images/Project Images/Lusion_React.webp';
 import MongoDB from '../images/Skill SVGs/mongodb.svg';
 import Movies from '../images/Project Images/Redux_Movies.webp';
+import NEXTJS from '../images/Skill SVGs/nextjs.svg';
 import ReactIcon from '../images/Skill SVGs/react.svg';
 import Redux from '../images/Skill SVGs/redux.svg';
 import Samtej from '../images/Project Images/SamTej.webp';
@@ -30,6 +31,11 @@ export const data = {
       'https://open.spotify.com/playlist/52gtDapY50kKkLEnnnvYgz?si=89f44d4ce2944b91',
   },
   skills: [
+    {
+      id: 20,
+      skillName: 'NEXT JS',
+      skillIcon: NEXTJS,
+    },
     {
       id: 1,
       skillName: 'React JS',

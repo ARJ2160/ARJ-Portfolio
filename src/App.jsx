@@ -14,8 +14,6 @@ import sunSvg from './images/sun.svg';
 import useDarkMode from './hooks/useDarkMode.js';
 
 // import Contact from './partials/Contact';
-// import darkMode from './images/darkMode.svg';
-// import lightMode from './images/lightMode.svg';
 
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
@@ -39,25 +37,6 @@ const App = () => {
         <Footer github={social.GitHub} />
       </div>
       <div>
-        {/* {colorTheme === 'light' ? (
-          <img
-            src={lightMode}
-            width={30}
-            height={30}
-            alt='Toggle theme'
-            className='cursor-pointer fixed top-5 right-5 select-none'
-            onClick={() => setTheme(colorTheme)}
-          />
-        ) : (
-          <img
-            src={darkMode}
-            width={30}
-            height={30}
-            alt='Toggle theme'
-            className='cursor-pointer fixed top-5 right-5 select-none'
-            onClick={() => setTheme(colorTheme)}
-          />
-        )} */}
         <img
           src={sunSvg}
           width={30}
