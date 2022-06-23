@@ -114,12 +114,12 @@ export const data = {
     },
     {
       id: 2,
-      title: 'Tailwind Spotify Clone',
+      title: 'NEXT JS Spotify Clone',
       image: Spotify,
-      description: 'Created a clone of the Spotify website with Tailwind.',
-      tags: ['React JS', 'Tailwind CSS'],
-      projectLink: 'https://tailwind-spotify-clone.vercel.app/',
-      link: 'https://github.com/ARJ2160/Tailwind-Spotify-Clone',
+      description: 'Created a clone of the Spotify website with NEXT JS, Tailwind CSS, NEXT Auth, and Spotify API.',
+      tags: ['NEXT JS', 'Tailwind CSS', 'Spotify API', 'NEXT Auth'],
+      projectLink: 'https://next-spotify-clone-xi.vercel.app/',
+      link: 'https://github.com/ARJ2160/Next-Spotify-Clone',
     },
     {
       id: 3,
