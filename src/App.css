@@ -26,3 +26,17 @@
 .tooltip {
   @apply absolute bottom-9 w-auto p-2 m-2 min-w-max rounded-md shadow-md text-xs font-bold scale-0 bg-black text-white transition-all duration-100 origin-bottom;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
