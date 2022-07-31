@@ -6,7 +6,7 @@ const ProjectCard = ({ keys, project }) => {
   return (
     <div
       key={keys}
-      className='max-w-sm dark:bg-white dark:text-black bg-backgroundBlue text-white shadow-lg rounded-lg overflow-hidden my-4'>
+      className='max-w-sm dark:bg-white dark:text-black shadow-lg rounded-lg overflow-hidden my-4'>
       <a href={projectLink} target='_blank' rel='noopener noreferrer'>
         <img
           className='w-full aspect-auto object-cover object-center'
