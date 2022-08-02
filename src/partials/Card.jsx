@@ -22,7 +22,7 @@ const Card = ({
 }) => {
   return (
     <div className='w-full dark:text-black h-screen flex justify-center flex-col items-center text-center'>
-      <img src={pic} className="w-28 h-28 my-7 rounded-full" alt="" />
+      <img src={pic} className='w-28 h-28 my-7 rounded-full' alt='' />
       <div className='text-2xl md:text-xl font-mono flex items-center justify-between text-center text-skyBlue'>
         <Typewriter
           onInit={(typewriter) => {

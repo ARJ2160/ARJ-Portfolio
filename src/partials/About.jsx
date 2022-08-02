@@ -11,14 +11,14 @@ const About = ({ about }) => {
       </div>
       <div className='flex flex-col justify-evenly text-lg text-left md:text-center mt-4'>
         {data.about.about_me}
-      </div>
-      <div className='text-center text-lg'>{data.about.tech}</div>
-      <div className='flex justify-center text-lg'>
-        <ul className='skill-list'>
-          {data.about.tech_list.map((tech) => (
-            <li className='font-mono'>{tech}</li>
-          ))}
-        </ul>
+        <span className=''>{data.about.tech}</span>
+        <div className='flex justify-center'>
+          <ul className='skill-list'>
+            {data.about.tech_list.map((tech) => (
+              <li className='font-mono'>{tech}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

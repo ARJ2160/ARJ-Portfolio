@@ -7,7 +7,7 @@ const ProjectCard = ({ keys, project }) => {
     <div data-aos='fade-up' data-aos-duration='800'>
       <div
         key={keys}
-        className='max-w-sm min-h-full dark:bg-white dark:text-black shadow-lg rounded-lg overflow-hidden my-4'
+        className='max-w-sm min-h-full bg-white text-black shadow-lg rounded-lg overflow-hidden my-4'
       >
         <a href={projectLink} target='_blank' rel='noopener noreferrer'>
           <img
@@ -23,7 +23,6 @@ const ProjectCard = ({ keys, project }) => {
             <p className='text-blue-600 my-2'>View Code</p>
           </a>
           <p className='py-2 text-lg'>{description}</p>
-
           <div className='mt-4 mb-8 flex flex-wrap justify-center items-center gap-2'>
             {tags.map((tag) => (
               <div key={i++} className='px-4 py-1 border-2 rounded-full'>
