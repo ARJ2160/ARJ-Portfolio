@@ -1,25 +1,25 @@
+import { data } from '../assets/data';
 import React from 'react';
+import pic from '../images/Atharva_Joshi.webp';
 
 const About = ({ about }) => {
   return (
-    <div className='background max-w-4xl mx-auto mt-16 sm:p-10 p-5 text-black dark:text-white'>
-      <div className='text-4xl pb-5 md:text-6xl leading-10 text-center my-10'>
-        <span className='font-bold'>My</span>{' '}
-        <span className='text-skyBlue font-bold'>Background</span>
+    <div className='background w-3/4 mx-auto h-screen text-black dark:text-opal'>
+      <div className='text-5xl pb-5 md:text-8xl text-center my-10'>
+        <span className='dark:text-darkOpal text-black'>About</span>{' '}
+        <span className='text-skyBlue'>Me</span>
       </div>
-      <p className='text-lg text-left md:text-center leading-relaxed mt-4'>
-        I am a React JS developer, excited to learn more about how technology
-        and business work in the corporate world. I have a tendency to always
-        ask questions about how certain things work, no matter what the topic
-        is. What piques my interest in understanding business strategies,
-        models, and other aspects related to business.
-        <br />
-        My Hard Skills: Creating sleek, elegant, low overhead, and mobile
-        responsive websites with libraries like React JS, Redux, Typescript,
-        Mongo DB, Mongoose, Tailwind CSS/Bootstrap 5, Express JS. I am
-        currently aiming towards increasing my tech stack towards technologies
-        like Solidity, GraphQL, and NEXT JS.
-      </p>
+      <div className='flex flex-col justify-evenly text-lg text-left md:text-center mt-4'>
+        {data.about.about_me}
+      </div>
+      <div className='text-center text-lg'>{data.about.tech}</div>
+      <div className='flex justify-center text-lg'>
+        <ul className='skill-list'>
+          {data.about.tech_list.map((tech) => (
+            <li className='font-mono'>{tech}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

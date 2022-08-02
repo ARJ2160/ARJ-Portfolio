@@ -13,8 +13,6 @@ import { data } from './assets/data';
 import sunSvg from './images/sun.svg';
 import useDarkMode from './hooks/useDarkMode.js';
 
-// import Contact from './partials/Contact';
-
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
   const { name, title, skills, projects, social } = data;
@@ -33,7 +31,6 @@ const App = () => {
         <About />
         <Skills skills={skills} />
         <Projects projects={projects} />
-        {/* <Contact /> */}
         <Footer github={social.GitHub} />
       </div>
       <div>

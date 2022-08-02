@@ -10,17 +10,48 @@ import ARJResume from '../assets/ARJ-Resume.pdf';
 import React from 'react';
 import { SiLinkedin } from 'react-icons/si';
 import pic from '../images/Atharva_Joshi.webp';
+import Typewriter from 'typewriter-effect';
+import { data } from '../assets/data';
 
 // import profile from "../images/profile.png";
-
+console.log(data);
 const Card = ({
   name,
   title,
   social: { GitHub, LinkedIn, Twitter, Email, Spotify },
 }) => {
   return (
-    <div className='w-full dark:text-black'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-2xl rounded-xl p-5 mt-10'>
+    <div className='w-full dark:text-black h-screen flex justify-center flex-col items-center text-center'>
+      <img src={pic} className="w-28 h-28 my-7 rounded-full" alt="" />
+      <div className='text-2xl md:text-xl font-mono flex items-center justify-between text-center text-skyBlue'>
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString('Hi')
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Kon'nichiwa")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString('Hola')
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString('Hi')
+              .start();
+          }}
+        />
+        <span className='ml-2'>{data.hero.my_name_is}</span>
+      </div>
+      <span className='md:text-8xl text-5xl dark:text-opal text-black'>
+        {data.hero.name}
+      </span>
+      <span className='md:text-8xl text-5xl dark:text-darkOpal text-black'>
+        {data.hero.subText}
+      </span>
+      <p className='sm:w-2/4 w-4/5 pt-5 md:text-lg md:text-center text-left text-base text-skyBlue'>
+        {data.hero.about_me}
+      </p>
+      {/* <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-2xl rounded-xl p-5 mt-10'>
         <div className='profile-pic'>
           <img
             className='w-32 mx-auto shadow-xl rounded-full'
@@ -93,7 +124,7 @@ const Card = ({
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
