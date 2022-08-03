@@ -7,7 +7,7 @@ const ProjectCard = ({ keys, project }) => {
     <div data-aos='fade-up' data-aos-duration='800'>
       <div
         key={keys}
-        className='max-w-sm min-h-full bg-white text-black shadow-lg rounded-lg overflow-hidden my-4'
+        className='max-w-md min-h-full bg-white text-black shadow-lg rounded-lg overflow-hidden my-4'
       >
         <a href={projectLink} target='_blank' rel='noopener noreferrer'>
           <img

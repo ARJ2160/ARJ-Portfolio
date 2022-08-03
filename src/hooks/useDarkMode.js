@@ -5,7 +5,14 @@ export default function useDarkMode() {
     localStorage.theme ? localStorage.theme : 'dark'
   );
   const colorTheme = theme === 'dark' ? 'light' : 'dark';
-
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      setTheme('dark');
+    } else setTheme('light');
+  }, []);
   useEffect(() => {
     const root = window.document.documentElement;
 

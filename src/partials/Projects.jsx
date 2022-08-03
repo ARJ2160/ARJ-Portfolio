@@ -4,7 +4,7 @@ import React from 'react';
 const Projects = ({ projects }) => {
   return (
     <div data-aos='fade-up' data-aos-duration='800'>
-      <div className='projects flex flex-col items-center'>
+      <div className='projects flex flex-col items-center md:px-24'>
         <div className='md:text-7xl text-5xl pb-5 text-center my-10'>
           <span className='dark:text-darkOpal text-black leading-10'>My</span>{' '}
           <span className='text-skyBlue'>Projects</span>

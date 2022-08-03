@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 import AOS from 'aos';
 import About from './partials/About.jsx';
-import Card from './partials/Card.jsx';
+import Hero from './partials/Hero.jsx';
 import Footer from './partials/Footer.jsx';
 import Projects from './partials/Projects.jsx';
 import Skills from './partials/Skills.jsx';
@@ -25,7 +25,7 @@ import ARJResume from './assets/ARJ-Resume.pdf';
 
 const App = () => {
   const [colorTheme, setTheme] = useDarkMode();
-  const { name, title, skills, projects, social } = data;
+  const { skills, projects, social } = data;
   const { GitHub, LinkedIn, Twitter, Email, Spotify } = social;
   useEffect(() => {
     AOS.init({
@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className='min-h-screen py-10 px-3 sm:px-5 dark:bg-backgroundBlue dark:text-white bg-white text-black'>
       <div data-aos='fade-down' data-aos-duration='800'>
-        <Card />
+        <Hero />
       </div>
       <div data-aos='fade-up' data-aos-duration='800' data-aos-delay='400'>
         <About />
@@ -63,11 +63,11 @@ const App = () => {
           onClick={() => setTheme(colorTheme)}
         />
       )}
-      <div className='social-media md:fixed md:block bottom-10 left-10 hidden'>
-        <ul className="social-media-list flex flex-col">
+      <div className='social-media md:fixed md:block hidden bottom-10 left-10 z-10'>
+        <ul className='social-media-list flex flex-col items-center list-none m-0 p-0'>
           <li>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-white dark:hover:bg-gray-800 text-black hover:bg-teal-500 rounded-full group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 dark:text-white dark:hover:bg-gray-800 text-black hover:bg-teal-500 rounded-full transition-transform group hover:translate-y-[-5px]'
               href={GitHub}
               target='_blank'
               rel='noopener noreferrer'
@@ -79,7 +79,7 @@ const App = () => {
           </li>
           <li>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-700 hover:bg-teal-500 rounded-full group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-700 hover:bg-black rounded-full transition-transform group hover:translate-y-[-5px]'
               href={LinkedIn}
               target='_blank'
               rel='noopener noreferrer'
@@ -91,7 +91,7 @@ const App = () => {
           </li>
           <li>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full transition-transform group hover:translate-y-[-5px]'
               href={Spotify}
               target='_blank'
               rel='noopener noreferrer'
@@ -103,7 +103,7 @@ const App = () => {
           </li>
           <li>
             <a
-              className='text-blue-500 hover:bg-blue-500 hover:text-white relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full group'
+              className='text-blue-500 hover:bg-black relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 rounded-full transition-transform group hover:translate-y-[-5px]'
               href={Twitter}
               target='_blank'
               rel='noopener noreferrer'
@@ -115,7 +115,7 @@ const App = () => {
           </li>
           <li>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 hover:text-white text-teal-500 hover:bg-teal-500 rounded-full group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 hover:dark:text-white hover:bg-teal-500 rounded-full transition-transform group hover:translate-y-[-5px]'
               href={'https://mail.google.com/mail/?view=cm&fs=1&to=' + Email}
               target='_blank'
               rel='noopener noreferrer'
@@ -127,7 +127,7 @@ const App = () => {
           </li>
           <li>
             <a
-              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full group'
+              className='relative flex justify-center items-center text-xl m-1 p-1 sm:m-2 sm:p-2 text-teal-500 hover:bg-black rounded-full transition-transform group hover:translate-y-[-5px]'
               href={ARJResume}
               download='Professional Resume - Atharva Joshi.pdf'
               target='_blank'
@@ -140,15 +140,17 @@ const App = () => {
           </li>
         </ul>
       </div>
-      {/* <div className='email flex flex-col items-center relative right-2 bottom-48 z-10 transition-all rotate-90'>
-        <a
-          href={'https://mail.google.com/mail/?view=cm&fs=1&to=' + Email}
-          target='_blank'
-          className='email-link fixed'
-        >
-          atharvaj2160@gmail.com
-        </a>
-      </div> */}
+      <div className='md:fixed md:block hidden right-[-35px] bottom-48 z-10 transition-all rotate-90'>
+        <div className='email flex flex-row items-center'>
+          <a
+            href={'https://mail.google.com/mail/?view=cm&fs=1&to=' + Email}
+            target='_blank'
+            className='email-link mr-10 hover:dark:text-white duration-300 dark:text-skyBlue text-black'
+          >
+            atharvaj2160@gmail.com
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

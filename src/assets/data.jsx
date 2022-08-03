@@ -22,8 +22,6 @@ import Purescript from "../images/Skill SVGs/purescript.svg";
 import Storybook from "../images/Skill SVGs/storybook.svg";
 
 export const data = {
-  name: 'Atharva Joshi',
-  title: 'React JS | Full-Stack Developer',
   social: {
     GitHub: 'https://github.com/ARJ2160',
     LinkedIn: 'https://www.linkedin.com/in/arj2160/',
@@ -191,7 +189,7 @@ export const data = {
   hero: {
     my_name_is: "my name is",
     name: 'Atharva Joshi.',
-    subText: 'I build stuff',
+    subText: 'I build stuff for the web.',
     about_me: `I'm a React Developer who loves creating aesthetically pleasing
     front-ends. Currently I'm focused on building my logic to the next level
     in basic Javascript. I aim on exploring new and obscure langauges like
