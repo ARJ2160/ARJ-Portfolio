@@ -199,15 +199,13 @@ export const data = {
     listening to some hip-hop ;)`
   },
   about: {
-    about_me: ` Hey there! My name is Atharva and I love creating sleek front-ends
-    along with high performant back end for the web. I first started playing
-    around with HTML and CSS back in 2021,trying to recreate mockups from
+    about_me: `Hey there! My name is Atharva and I love creating sleek front-ends
+    along with high performant back-end for the web. I first started playing
+    around with HTML and CSS back in 2021, trying to recreate mockups from
     Tumblr and since then I have fallen in love with React and MERN Stack.
-    What amazes me is the sheer simplicity and weirdness of JavaScript and
-    how easily it can get complicated. Nowadays, my mind is on the business
-    side of the spectrum, trying to understand the gist of business
-    strategies and financing. I work at an IT Company called Apptware where I get to work on everything from an E-commerce website to web apps used by Data Scientists.`,
-    tech: `Here are some of the technologies i get to work with :`,
+    What amazes me is the sheer simplicity and weirdness of JavaScript. Nowadays, my mind is on the business side of the spectrum, trying to understand the gist of business
+    strategies and financing. I work at an IT Company called Apptware where I get to work on everything, from an E-commerce website to web apps used by Data Scientists.`,
+    tech: `Here are some of the technologies I get to work with :`,
     tech_list: ['React Typescript', 'Storybook', 'Cypress', 'JavaScript ES6']
   }
 };
