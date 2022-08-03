@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Apercu Pro Medium';
-  src: url('fonts/Apercu Pro Medium.otf') format('otf') local('Apercu Pro Medium'),
+  src: url('fonts/Apercu Pro Medium.otf') format('otf');
 }
 
 * {
