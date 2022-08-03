@@ -199,7 +199,7 @@ export const data = {
     listening to some hip-hop ;)`
   },
   about: {
-    about_me: ` Hey there! My name is Atharva and I am love creating sleek front-ends
+    about_me: ` Hey there! My name is Atharva and I love creating sleek front-ends
     along with high performant back end for the web. I first started playing
     around with HTML and CSS back in 2021,trying to recreate mockups from
     Tumblr and since then I have fallen in love with React and MERN Stack.
