@@ -18,8 +18,8 @@ import Samtej from '../images/Project Images/SamTej.webp';
 import Spotify from '../images/Project Images/Spotify_Clone.webp';
 import Tailwind from '../images/Skill SVGs/tailwind-css.svg';
 import Typescript from '../images/Skill SVGs/typescript.svg';
-import Purescript from "../images/Skill SVGs/purescript.svg";
-import Storybook from "../images/Skill SVGs/storybook.svg";
+import Purescript from '../images/Skill SVGs/purescript.svg';
+import Storybook from '../images/Skill SVGs/storybook.svg';
 
 export const data = {
   social: {
@@ -126,7 +126,8 @@ export const data = {
       id: 2,
       title: 'NEXT JS Spotify Clone',
       image: Spotify,
-      description: 'Created a clone of the Spotify website with NEXT JS, Tailwind CSS, NEXT Auth, and Spotify API.',
+      description:
+        'Created a clone of the Spotify website with NEXT JS, Tailwind CSS, NEXT Auth, and Spotify API.',
       tags: ['NEXT JS', 'Tailwind CSS', 'Spotify API', 'NEXT Auth'],
       projectLink: 'https://next-spotify-clone-xi.vercel.app/',
       link: 'https://github.com/ARJ2160/Next-Spotify-Clone',
@@ -187,14 +188,14 @@ export const data = {
     },
   ],
   hero: {
-    my_name_is: "my name is",
+    my_name_is: 'my name is',
     name: 'Atharva Joshi.',
     subText: 'I build stuff for the web.',
     about_me: `I'm a React Developer who loves creating aesthetically pleasing
     front-ends. Currently I'm focused on building my logic to the next level
     in basic Javascript. I aim on exploring new and obscure langauges like
     Haskell, GraphQL, Solidity, Prisma. When I'm not coding I'm probably
-    listening to some hip-hop ;)`
+    listening to some hip-hop ;)`,
   },
   about: {
     about_me: `Hey there! My name is Atharva and I love creating sleek front-ends
@@ -204,6 +205,6 @@ export const data = {
     What amazes me is the sheer simplicity and weirdness of JavaScript. Nowadays, my mind is on the business side of the spectrum, trying to understand the gist of business
     strategies and financing. I work at an IT Company called Apptware where I get to work on everything, from an E-commerce website to web apps used by Data Scientists.`,
     tech: `Here are some of the technologies I get to work with :`,
-    tech_list: ['React Typescript', 'Storybook', 'Cypress', 'JavaScript ES6']
-  }
+    tech_list: ['React Typescript', 'Storybook', 'Cypress', 'JavaScript ES6'],
+  },
 };

@@ -7,7 +7,8 @@ const Footer = () => {
         Made by{' '}
         <a
           className='text-skyBlue hover:underline'
-          href='https://github.com/ARJ2160'>
+          href='https://github.com/ARJ2160'
+        >
           Atharva J
         </a>
       </p>
