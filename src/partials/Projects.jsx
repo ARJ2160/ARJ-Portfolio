@@ -3,18 +3,13 @@ import React from 'react';
 
 const Projects = ({ projects }) => {
   return (
-    <div data-aos='fade-up' data-aos-duration='800'>
-      <div className='projects flex flex-col items-center md:px-24'>
-        <div className='md:text-7xl text-5xl pb-5 text-center my-10'>
-          <span className='dark:text-darkOpal text-black leading-10'>My</span>{' '}
-          <span className='text-skyBlue'>Projects</span>
-        </div>
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10'>
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </div>
+    <div className='projects'>
+      <h1 className='mt-8 pb-5 text-2xl md:text-5xl text-center font-extrabold'>
+        My projects
+      </h1>
+      {projects.map((project) => (
+        <ProjectCard key={project.id} project={project} />
+      ))}
     </div>
   );
 };

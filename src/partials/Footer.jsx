@@ -2,13 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='flex justify-center items-center text-center w-full text-2xl my-20'>
-      <p className='dark:text-darkOpal text-black'>
+    <div className='text-center w-full mt-16'>
+      <p className='text-gray-600 mb-4'>
         Made by{' '}
         <a
-          className='text-skyBlue hover:underline'
-          href='https://github.com/ARJ2160'
-        >
+          className='text-blue-500 hover:underline'
+          href='https://github.com/ARJ2160'>
           Atharva J
         </a>
       </p>

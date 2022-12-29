@@ -1,27 +1,29 @@
-import { data } from '../assets/data';
 import React from 'react';
-import pic from '../images/Atharva_Joshi.webp';
 
-const About = () => {
+const About = ({ title }) => {
   return (
-    <div className='background w-3/4 mx-auto min-h-max pt-20'>
-      <div className='text-5xl pb-5 md:text-8xl text-center my-10'>
-        <span className='dark:text-darkOpal text-black'>About</span>{' '}
-        <span className='text-skyBlue'>Me</span>
-      </div>
-      <div className='flex flex-col justify-evenly text-lg text-left md:text-center mt-4 dark:text-opal text-black'>
-        {data.about.about_me}
-        <span className='dark:text-opal text-black'>{data.about.tech}</span>
-        <div className='flex justify-center'>
-          <ul className='skill-list'>
-            {data.about.tech_list.map((tech, i) => (
-              <li key={i} className='font-mono dark:text-opal text-black'>
-                {tech}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+    <div className='background max-w-4xl mx-auto mt-16 sm:p-10 p-5'>
+      <h1 className='text-2xl pb-5 md:text-5xl font-bold text-center'>
+        {title}
+      </h1>
+      <p className='text-base text-left md:text-center text-gray-600 dark:text-white leading-relaxed mt-4'>
+        I am a <strong>React JS Developer</strong>, excited to learn more about
+        how Technology and Business work in the corporate world. I have a
+        tendency to always ask questions about how certain things work, no
+        matter what the topic is. What piques my interest is understanding
+        Business Strategies, Business Models, and other various aspects related
+        to businesses. <br />
+        <strong>My Hard Skills:</strong> Creating sleek, elegant, low overhead
+        websites with libraries like Express JS, React JS, Redux, Mongo DB,
+        Mongoose, and Tailwind. I am currently aiming towards increasing my
+        tech stack so as to learn in-demand skills like Next JS, GraphQL and
+        TypeScript.
+        <br />
+        <strong>My Soft Skills:</strong> I have a good command of verbal and
+        written English. My earnest attitude towards getting the job done makes
+        me a good addition to the team and with time and after gaining
+        experience I would like to move on to a managing position.
+      </p>
     </div>
   );
 };
