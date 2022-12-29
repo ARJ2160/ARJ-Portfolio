@@ -18,8 +18,6 @@ import Samtej from '../images/Project Images/SamTej.webp';
 import Spotify from '../images/Project Images/Spotify_Clone.webp';
 import Tailwind from '../images/Skill SVGs/tailwind-css.svg';
 import Typescript from '../images/Skill SVGs/typescript.svg';
-import Purescript from '../images/Skill SVGs/purescript.svg';
-import Storybook from '../images/Skill SVGs/storybook.svg';
 
 export const data = {
   social: {
@@ -47,24 +45,14 @@ export const data = {
       skillIcon: Typescript,
     },
     {
-      id: 333,
-      skillName: 'Purescript',
-      skillIcon: Purescript,
+      id: 4,
+      skillName: 'Redux',
+      skillIcon: Redux,
     },
     {
       id: 5,
       skillName: 'JavaScript',
       skillIcon: Javascript,
-    },
-    {
-      id: 21,
-      skillName: 'Storybook',
-      skillIcon: Storybook,
-    },
-    {
-      id: 4,
-      skillName: 'Redux',
-      skillIcon: Redux,
     },
     {
       id: 3,
