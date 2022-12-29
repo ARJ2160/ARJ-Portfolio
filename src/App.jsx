@@ -1,8 +1,6 @@
 import 'aos/dist/aos.css';
 import './App.css';
-
 import React, { useEffect } from 'react';
-
 import AOS from 'aos';
 import About from './partials/About.jsx';
 import Card from './partials/Card.jsx';
